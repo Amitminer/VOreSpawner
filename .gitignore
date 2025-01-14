@@ -2,3 +2,4 @@ vendor
 composer.lock
 virus-infections.json
 .vscode
+composer.json
