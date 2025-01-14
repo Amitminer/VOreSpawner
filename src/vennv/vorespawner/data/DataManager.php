@@ -48,6 +48,10 @@ final class DataManager {
 		return $types[$type];
 	}
 
+	public static function getAllDataSpawner() : array {
+		return self::getConfig()->get("ore_spawner_types");
+	}
+
 	public static function giveOreSpawner(Player $player, string $type, int $level = 1, int $amount = 1) : bool {
 		$item = self::getOreSpawner($type, $level);
 

@@ -1,5 +1,3 @@
----
-
 # Update interval in seconds (will be converted to ticks internally: 1 second = 20 ticks)
 update_interval: 20 # Spawner action interval in seconds
 
@@ -11,31 +9,23 @@ messages:
 # Types of OreSpawner
 ore_spawner_types:
   coal:
-    # This is the item that you will hold in your hand to represent the Spawner. In short, the item in hand to pose as the Spawner.
     item_data:
-      item: "minecraft:coal_ore"
+      item: "minecraft:black_glazed_terracotta"
       name: "Coal Ore"
       lore:
         - "Coal Ore"
         - "Level: %level%"
 
-    # Blocks to spawn
     blocks:
-      - "minecraft:stone"
       - "minecraft:coal_ore"
 
-    # Spawn levels and their respective speeds
-    # Speed determines how quickly the spawner operates:
-    # - Each level increases the speed of ticking.
-    # - Speed affects the time taken for the spawner to perform its action:
-    #     Real-time (seconds) = (default-interval / speed) i..e  20 / 2 = 10 seconds
     levels:
       1:
-        speed: 1 # Default speed, uses full interval time.
+        speed: 1
       2:
-        speed: 2 # Halves the time required.
+        speed: 2
       3:
-        speed: 3 # Reduces time to one-third of the default interval.
+        speed: 3
 
   diamond:
     item_data:
@@ -45,13 +35,127 @@ ore_spawner_types:
         - "Diamond Ore"
         - "Level: %level%"
 
-    # Blocks to spawn
     blocks:
       - "minecraft:diamond_ore"
+
     levels:
       1:
         speed: 1
       2:
         speed: 2
       3:
-        speed: 3 
+        speed: 3
+
+  emerald:
+    item_data:
+      item: "minecraft:lime_glazed_terracotta"
+      name: "Emerald Ore"
+      lore:
+        - "Emerald Ore"
+        - "Level: %level%"
+
+    blocks:
+      - "minecraft:emerald_ore"
+
+    levels:
+      1:
+        speed: 1
+      2:
+        speed: 2
+      3:
+        speed: 3
+
+  lapis:
+    item_data:
+      item: "minecraft:blue_glazed_terracotta"
+      name: "Lapis lazuli Ore"
+      lore:
+        - "Lapis Ore"
+        - "Level: %level%"
+
+    blocks:
+      - "minecraft:lapis_lazuli_ore"
+
+    levels:
+      1:
+        speed: 1
+      2:
+        speed: 2
+      3:
+        speed: 3
+
+  redstone:
+    item_data:
+      item: "minecraft:red_glazed_terracotta"
+      name: "Redstone Ore"
+      lore:
+        - "Redstone Ore"
+        - "Level: %level%"
+
+    blocks:
+      - "minecraft:redstone_ore"
+
+    levels:
+      1:
+        speed: 1
+      2:
+        speed: 2
+      3:
+        speed: 3
+
+  gold:
+    item_data:
+      item: "minecraft:yellow_glazed_terracotta"
+      name: "Gold Ore"
+      lore:
+        - "Gold Ore"
+        - "Level: %level%"
+
+    blocks:
+      - "minecraft:gold_ore"
+
+    levels:
+      1:
+        speed: 1
+      2:
+        speed: 2
+      3:
+        speed: 3
+
+  iron:
+    item_data:
+      item: "minecraft:light_gray_glazed_terracotta"
+      name: "Iron Ore"
+      lore:
+        - "Gold Ore"
+        - "Level: %level%"
+
+    blocks:
+      - "minecraft:iron_ore"
+
+    levels:
+      1:
+        speed: 1
+      2:
+        speed: 2
+      3:
+        speed: 3
+
+  cobblestone:
+    item_data:
+      item: "minecraft:gray_glazed_terracotta"
+      name: "Cobblestone"
+      lore:
+        - "Cobblestone"
+        - "Level: %level%"
+
+    blocks:
+      - "minecraft:cobblestone"
+
+    levels:
+      1:
+        speed: 1
+      2:
+        speed: 2
+      3:
+        speed: 3

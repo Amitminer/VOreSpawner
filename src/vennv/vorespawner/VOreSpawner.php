@@ -61,6 +61,13 @@ final class VOreSpawner extends PluginBase {
 				return false;
 			}
 
+			if($args[0] == "all"){
+				$allTypes = DataManager::getAllDataSpawner();
+				foreach ($allTypes as $type => $data) {
+					DataManager::giveOreSpawner($sender, $type);
+				}
+			}
+
 			if ($args[0] == "give") {
 				if (
 					!isset($args[1]) ||
